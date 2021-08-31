@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+h1 {
+  color: red;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -103,12 +107,10 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -8247,7 +8249,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -8267,9 +8268,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -10901,5 +10901,526 @@ a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.userform .custom-navbar {
+  padding-left: 40px;
+  padding-right: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.userform .custom-navbar .nav-title {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.userform .custom-navbar .nav-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: gray;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper {
+  border-right: solid 1px gray;
+  padding: 0 15px 0 15px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu {
+  right: 0;
+  left: auto;
+  margin-top: 10px;
+  width: 100%;
+  min-width: 350px;
+  height: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .no-notification {
+  display: none !important;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-box-icon {
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-line {
+  border-top: solid 2px #876ab1;
+  width: 100%;
+  margin: 5px 0;
+  max-width: 100px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-details {
+  line-height: 25px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-subtitle {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes {
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notification-text-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px !important;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 15px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-check {
+  width: 100%;
+  max-width: 70px;
+  background-color: #876ab1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-check .fa {
+  color: white;
+  font-size: 25px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-times {
+  width: 100%;
+  max-width: 70px;
+  background-color: #7d7d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-times .fa {
+  color: white;
+  font-size: 25px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card {
+  width: 100%;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group {
+  line-height: 15px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group .notif-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group .notif-department {
+  font-size: 14px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-user {
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  line-height: 15px !important;
+  background-color: gainsboro;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver .info-top {
+  display: flex;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver .notif-approver {
+  margin-left: 5px !important;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .btn-notification {
+  border: none;
+  background-color: transparent;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .btn-notification .nav-icon {
+  color: gray;
+  font-size: 20px;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .btn-notification:focus {
+  outline: none;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper .btn-notification:focus .nav-icon {
+  color: cornflowerblue;
+}
+
+.userform .custom-navbar .nav-options .nav-option-wrapper:last-child {
+  border-right: solid 1px transparent;
+}
+
+.userform .main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.userform .form-wrapper {
+  width: 500px;
+  height: 500px;
+  background-color: ghostwhite;
+}
+
+.userform .dashboard {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100%;
+  max-width: 240px;
+  background-color: #876ab1;
+}
+
+.userform .dashboard .dashboard-wrapper .user-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.userform .dashboard .dashboard-wrapper .user-wrapper .user-icon {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  border-radius: 100%;
+}
+
+.userform .dashboard .dashboard-wrapper .user-wrapper .user-details {
+  margin-top: 10px;
+  line-height: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.userform .dashboard .dashboard-wrapper .user-wrapper .user-details .user-name {
+  font-weight: 600;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper {
+  margin-top: 30px;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper .list-container {
+  padding: 13px 30px 13px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper .list-container .list-icon {
+  margin-right: 10px;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper .list-container .list-choice {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper .list-container:hover {
+  text-decoration: none;
+  background-color: #7c718e;
+  border-left: solid 5px #544d4d;
+  padding-left: 25px;
+}
+
+.userform .dashboard .dashboard-wrapper .list-wrapper .active-list {
+  background-color: #b7a7d0;
+  border-left: solid 5px white;
+  padding-left: 25px;
+}
+
+.userform .event-container {
+  padding-top: 60px;
+  width: 100%;
+  max-width: 100%;
+  background-color: gainsboro;
+}
+
+.userform .event-container .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.userform .event-container .form-container .actual-form {
+  border-radius: 6px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background-color: white;
+  height: 400px;
+  width: 700px;
+  position: relative;
+  margin-left: -50px;
+}
+
+.userform .event-container .form-container .actual-form .network-related-form {
+  width: 100%;
+  height: 100%;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 20px;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-disabled {
+  display: none;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-prev {
+  margin-right: 30px;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn .btn-progress {
+  background-color: #876ab1;
+  border-color: #876ab1;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-next,
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-prev {
+  width: 100% !important;
+  max-width: 110px !important;
+  height: auto !important;
+  color: white !important;
+}
+
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-next:after,
+.userform .event-container .form-container .actual-form .progress-btn .swiper-button-prev:after {
+  content: none !important;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder {
+  padding: 20px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .form-heading {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: solid 1px #676161;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #676161;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-group {
+  width: 100%;
+  margin-bottom: 10px !important;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-group .textbox-form {
+  border: solid 1px gray;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-flex-group {
+  display: flex;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-flex-group .textbox-form {
+  margin-right: 10px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-flex-group .textbox-form:last-child {
+  margin-right: 0;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-flex-group .form-group {
+  margin-right: 10px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .form-flex-group .form-group:last-child {
+  margin-right: 0;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-group-flex {
+  margin-top: 10px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-group-flex .form-check {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-group-flex .form-check:last-child {
+  padding-right: 0;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-group-flex-custom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-group-flex-custom .form-check {
+  flex: 25%;
+  padding-bottom: 10px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-custom {
+  visibility: hidden;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-image {
+  border: 1px solid gray;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 15px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-image .fa {
+  font-size: 20px;
+  color: gray;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-image .radio-label-text {
+  font-size: 15px;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-image:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #b1a4c3;
+  background-color: #b1a4c3;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-image:hover .fa {
+  color: white;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-custom:checked ~ .radio-image {
+  border: solid 2px #876ab1;
+  background-color: #876ab1;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-custom:checked ~ .radio-image .radio-label-text {
+  color: white;
+}
+
+.userform .event-container .form-container .actual-form .swiper-content-holder .swiper-form-part .radio-custom:checked ~ .radio-image .fa {
+  color: white;
+}
+
+.userform .event-container .form-container .actual-form .swiper-pagination {
+  left: -30px;
+  top: 1px;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.userform .event-container .form-container .actual-form .swiper-pagination .swiper-pagination-bullet {
+  color: transparent;
+  width: 15px !important;
+  height: 25px !important;
+  margin-bottom: 5px !important;
+  border-radius: 0px !important;
+}
+
+.userform .event-container .form-container .actual-form .swiper-pagination .swiper-pagination-bullet-active {
+  background: #876ab1;
+  color: white;
+  text-align: center;
+}
+
+.userform .form-checkbox-list {
+  display: flex;
+}
+
+.userform .form-checkbox-list .form-check {
+  margin-right: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0 !important;
 }
 

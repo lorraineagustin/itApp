@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/itform', function () {
+    return view('form');
+});
+
+Route::get('/documents', function () {
+    return view('tray');
+});
+
+Route::get('/history', function () {
+    return view('history');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
