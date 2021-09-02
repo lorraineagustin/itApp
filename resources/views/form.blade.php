@@ -390,7 +390,17 @@
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="swiper-content-holder">
-                                          <p class="form-heading">Details Confirmation</p>
+                                          <p class="form-heading">For Approval</p>
+                                          {{-- <div class="final-form-confirmation"> --}}
+                                            <table class="table table-bordered table-hover table-sm">
+                                              <tr>
+                                                <td bgcolor="gray">Request Date</td>
+                                                <td>Ghirlie Mei Saptang</td>
+                                                <td bgcolor="gray">Date Hired</td>
+                                                <td>2018-10-20</td>
+                                              </tr>
+                                            </table>
+                                          
                                         </div>
                                       </div>
                                   
