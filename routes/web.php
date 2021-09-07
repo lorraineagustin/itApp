@@ -33,6 +33,10 @@ Route::get('/landing', function () {
     return view('landing');
 });
 
+Route::get('/managers', function () {
+    return view('managers');
+});
+
 Route::get('/tutorial', function () {
     return view('tutorial');
 });

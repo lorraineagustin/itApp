@@ -23,7 +23,7 @@
         background-color: #ffb8b8;
         margin-right: 55px;
         margin-bottom: 15px;
-        margin-left: 50px;
+        margin-left: 44px;
         display: flex;
         flex-direction: column;
         width: 32%;
@@ -162,6 +162,7 @@
             
             }
 
+
     }
 
     .ongoing-box {
@@ -230,10 +231,6 @@
                     background-color: red;
                     color: white;
     
-                }
-    
-                .box-wrapper {
-                    background-color: transparent;
                 }
     
                 .box-card {
@@ -369,19 +366,7 @@
                 background-color: transparent;
             }
 
-            .box-title {
-                font-size: 20px;
-                background-color: #636e72;
-                color: white;
-                text-transform: capitalize;
-                text-align: center;
-                height: 36px;
-                padding-top: 3px;
-                }
-    
-                .box-wrapper {
-                    background-color: transparent;
-                }
+            
     
                 .box-card {
                     height: 219px;
@@ -435,11 +420,136 @@
                     border-bottom-right-radius: 15px;
                 }
     
-                
-                
-                
-    
+            
+    }
 
+    .empty-new-box {
+        background-color: white;
+        margin-right: 55px;
+        margin-bottom: 15px;
+        margin-left: 44px;
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        height: 75%;
+        margin-top: 100px;
+
+        
+
+        .empty-box-title {
+            font-size: 20px;
+            background-color: #636e72;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            height: 36px;
+            padding-top: 3px;
+            position: relative;
+            display: inline-block;
+            border-radius: 2px;
+            text-decoration: none;
+            overflow-y: hidden;
+
+            }
+
+            .empty-box-title .badge {
+                height: 20px;
+                padding-bottom: 17px;
+                border-radius: 25%;
+                background-color: red;
+                color: white;
+            }
+
+            .empty-box-wrapper {
+                background-color: transparent;
+            }
+
+            .empty-box-icon {
+                padding-top: 105px;
+                padding-left: 115px;
+            }
+
+            .empty-title {
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                padding-top: 12px;
+            }
+            .empty-subtitle {
+                text-align: center;
+                font-size: 14px;
+              
+            }
+
+            .box-line {
+                border-top: solid 2px #bdc3c7;
+                margin-left: 55px;
+                margin-top: 28px;
+                width: 187px;
+            }
+    }
+
+    .empty-ongoing-box {
+        background-color: white;
+        margin-right: 55px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+        height: 75%;
+        margin-top: 100px;
+
+        .empty-box-title {
+            font-size: 20px;
+            background-color: #636e72;
+            color: white;
+            text-transform: capitalize;
+            text-align: center;
+            height: 36px;
+            padding-top: 3px;
+            position: relative;
+            display: inline-block;
+            border-radius: 2px;
+            text-decoration: none;
+            overflow-y: hidden;
+
+            }
+
+            .empty-box-title .badge {
+                height: 20px;
+                padding-bottom: 17px;
+                border-radius: 25%;
+                background-color: red;
+                color: white;
+            }
+
+            .empty-box-wrapper {
+                background-color: transparent;
+            }
+
+            .empty-box-icon {
+                padding-top: 105px;
+                padding-left: 115px;
+            }
+
+            .empty-title {
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                padding-top: 12px;
+            }
+            .empty-subtitle {
+                text-align: center;
+                font-size: 14px;
+              
+            }
+
+            .box-line {
+                border-top: solid 2px #bdc3c7;
+                margin-left: 55px;
+                margin-top: 28px;
+                width: 187px;
+            }
     }
 
 

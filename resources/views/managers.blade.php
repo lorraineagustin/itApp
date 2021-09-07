@@ -2,7 +2,7 @@
 
 @section('content')
 <main>
-    <div class="landing-form">
+    <div class="managers-form">
         <nav class="custom-navbar navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
                 <img src="{{URL::asset('resources/assets/form.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -106,8 +106,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container-main">
-           
+        <div class="main-container">
             <div class="dashboard">
                 <div class="dashboard-wrapper">
                     <div class="user-wrapper">
@@ -134,145 +133,72 @@
                     </div>
                 </div>
             </div>
-            <div class="parent-holder">
-                {{-- <div class="new-box">
-                  <a href="#" class="box-title">
-                    <span>New</span>
-                    <span class="badge">4</span>
-                  </a>
-                    <div class="box-wrapper">
-                      <div class="box-card">
-                        <p class="card-title">Account Removal</p>
-                        <p class="card-title-second">Chris Narciso</p>
-                        <p class="card-title-third">Production Control</p>
-                        <p class="card-date">08/09/2021</p>
+            <div class="main-holder">
+                <div class="table-wrapper">
+                    <table id="table_id" class="table table-bordered custome-table">
+                        <thead>
+                            <tr class="table-header">
+                                <th>Employee Name</th>
+                                <th> Emp ID</th>
+                                <th>Department</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jenny Rose Santos</td>
+                                <td>2910852</td>
+                                <td>Production Improvement</td>
+                                <td><a id="" class="text-primary" data-toggle="modal"  data-target="#exampleModal"><i class="fa fa-eye text-primary"></i></button></a></td>
+                            </tr>
 
-                        <div class="function-btn">
-                          <button type="button" class="get-btn">Get</button>
-                          <button type="button" class="cancel-btn">Cancel</button>
+                            <tr>
+                                <td>Marilyn Real</td>
+                                <td>2905394</td>
+                                <td>Human Resource & Gen Services</td>
+                                <td><a id="" class="text-primary" data-toggle="modal"  data-target="#exampleModal"><i class="fa fa-eye text-primary"></i></button></a></td>
+                            </tr>
+
+                            <tr>
+                                <td>Maricris Endaya</td>
+                                <td>2906951</td>
+                                <td>Production</td>
+                                <td><a id="" class="text-primary" data-toggle="modal"  data-target="#exampleModal"><i class="fa fa-eye text-primary"></i></button></a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <!---approval modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Approve</button>
+                              <button type="button" class="btn btn-primary">Deny</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-
-                      <div class="box-card">
-                        <p class="card-title">SSL VPN</p>
-                        <p class="card-title-second">Jovito Malang</p>
-                        <p class="card-title-third">Manufacturing Management Control</p>
-                        <p class="card-date">08/23/2021</p>
-
-                        <div class="function-btn">
-                          <button type="button" class="get-btn">Get</button>
-                          <button type="button" class="cancel-btn">Cancel</button>
-                        </div>
-                      </div>
-
-                      <div class="box-card">
-                        <p class="card-title">New User Account</p>
-                        <p class="card-title-second">Christian Joseph Salandanan</p>
-                        <p class="card-title-third">PED</p>
-                        <p class="card-date">07/26/2021</p>
-
-                        <div class="function-btn">
-                          <button type="button" class="get-btn">Get</button>
-                          <button type="button" class="cancel-btn">Cancel</button>
-                        </div>
-                      </div>
-
-                      <div class="box-card">
-                        <p class="card-title">SSL VPN</p>
-                        <p class="card-title-second">Jovito Malang</p>
-                        <p class="card-title-third">Manufacturing Management Control</p>
-                        <p class="card-date">08/23/2021</p>
-
-                        <div class="function-btn">
-                          <button type="button" class="get-btn">Get</button>
-                          <button type="button" class="cancel-btn">Cancel</button>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    
-                </div> --}}
-
-                <div class="empty-new-box">
-                  <a href="#" class="empty-box-title">
-                    <span>New</span>
-                    <span class="badge">0</span>
-                  </a>
-                  <div class="empty-box-wrapper">
-                    <img class="empty-box-icon" src="{{URL::asset('resources/assets/box.png')}}">
-                    <div class="box-line"></div>
-                    <p class="empty-title">This field is empty</p>
-                    <p class="empty-subtitle">You don't have any new requests.</p>
-                  </div>
-                </div>
-
-                {{-- <div class="ongoing-box">
-                  <a href="#" class="box-title">
-                    <span>On-going</span>
-                    <span class="badge">2</span>
-                  </a>
-                    <div class="box-wrapper">
-                      <div class="box-card">
-                        <p class="card-title">New User Account</p>
-                        <p class="card-title-second">Christian Joseph Salandanan</p>
-                        <p class="card-title-third">PED</p>
-                        <p class="card-date">07/26/2021</p>
-
-                        <div class="function-btn">
-                          <button type="button" class="resolve-btn">Resolve</button>
-                        </div>
-                      </div>
-                      
-                      <div class="box-card">
-                        <p class="card-title">Email Removal</p>
-                        <p class="card-title-second">Cecilia Bautista</p>
-                        <p class="card-title-third">RMM</p>
-                        <p class="card-date">07/14/2021</p>
-
-                        <div class="function-btn">
-                          <button type="button" class="resolve-btn">Resolve</button>
-                        </div>
-                      </div>
-                    </div>
-                </div> --}}
-
-                <div class="empty-ongoing-box">
-                  <a href="#" class="empty-box-title">
-                    <span>On-going</span>
-                    <span class="badge">0</span>
-                  </a>
-                  <div class="empty-box-wrapper">
-                    <img class="empty-box-icon" src="{{URL::asset('resources/assets/box.png')}}">
-                    <div class="box-line"></div>
-                    <p class="empty-title">This field is empty</p>
-                    <p class="empty-subtitle">You don't have any on-going requests.</p>
-                  </div>
-                </div>
-
-                <div class="done-box">
-                  <a href="#" class="box-title">
-                    <span>Done</span>
-                    <span class="badge">2</span>
-                  </a>
-                    <div class="box-wrapper">
-                      <div class="box-card">
-                        <p class="card-title">IMES/Matrix</p>
-                        <p class="card-title-second">Carrelle Jane Sicat</p>
-                        <p class="card-title-third">Production</p>
-                        <p class="card-date-done">07/28/2021</p>
-                      </div>
-
-                      <div class="box-card">
-                        <p class="card-title">Email Removal</p>
-                        <p class="card-title-second">Cecilia Bautista</p>
-                        <p class="card-title-third">RMM</p>
-                        <p class="card-date-done">07/14/2021</p>
-                      </div>
-                        
-                    </div>
-                </div>
             </div>
         </div>
     </div>
 </main>
+<script>
+    $('document').ready(function(){
+        var divFilter ='';
+        $("#table_id").DataTable({
+
+        });
+    });
+    </script>
 @endsection

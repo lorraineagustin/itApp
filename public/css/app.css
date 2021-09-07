@@ -11644,7 +11644,7 @@ p {
   background-color: #ffb8b8;
   margin-right: 55px;
   margin-bottom: 15px;
-  margin-left: 50px;
+  margin-left: 44px;
   display: flex;
   flex-direction: column;
   width: 32%;
@@ -11846,10 +11846,6 @@ p {
   color: white;
 }
 
-.landing-form .ongoing-box .box-wrapper {
-  background-color: transparent;
-}
-
 .landing-form .ongoing-box .box-card {
   height: 219px;
   border-radius: 18px;
@@ -11976,20 +11972,6 @@ p {
   background-color: transparent;
 }
 
-.landing-form .done-box .box-title {
-  font-size: 20px;
-  background-color: #636e72;
-  color: white;
-  text-transform: capitalize;
-  text-align: center;
-  height: 36px;
-  padding-top: 3px;
-}
-
-.landing-form .done-box .box-wrapper {
-  background-color: transparent;
-}
-
 .landing-form .done-box .box-card {
   height: 219px;
   border-radius: 18px;
@@ -12037,6 +12019,131 @@ p {
   padding-right: 19px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+}
+
+.landing-form .empty-new-box {
+  background-color: white;
+  margin-right: 55px;
+  margin-bottom: 15px;
+  margin-left: 44px;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 75%;
+  margin-top: 100px;
+}
+
+.landing-form .empty-new-box .empty-box-title {
+  font-size: 20px;
+  background-color: #636e72;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  height: 36px;
+  padding-top: 3px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  text-decoration: none;
+  overflow-y: hidden;
+}
+
+.landing-form .empty-new-box .empty-box-title .badge {
+  height: 20px;
+  padding-bottom: 17px;
+  border-radius: 25%;
+  background-color: red;
+  color: white;
+}
+
+.landing-form .empty-new-box .empty-box-wrapper {
+  background-color: transparent;
+}
+
+.landing-form .empty-new-box .empty-box-icon {
+  padding-top: 105px;
+  padding-left: 115px;
+}
+
+.landing-form .empty-new-box .empty-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 12px;
+}
+
+.landing-form .empty-new-box .empty-subtitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+.landing-form .empty-new-box .box-line {
+  border-top: solid 2px #bdc3c7;
+  margin-left: 55px;
+  margin-top: 28px;
+  width: 187px;
+}
+
+.landing-form .empty-ongoing-box {
+  background-color: white;
+  margin-right: 55px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 75%;
+  margin-top: 100px;
+}
+
+.landing-form .empty-ongoing-box .empty-box-title {
+  font-size: 20px;
+  background-color: #636e72;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  height: 36px;
+  padding-top: 3px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  text-decoration: none;
+  overflow-y: hidden;
+}
+
+.landing-form .empty-ongoing-box .empty-box-title .badge {
+  height: 20px;
+  padding-bottom: 17px;
+  border-radius: 25%;
+  background-color: red;
+  color: white;
+}
+
+.landing-form .empty-ongoing-box .empty-box-wrapper {
+  background-color: transparent;
+}
+
+.landing-form .empty-ongoing-box .empty-box-icon {
+  padding-top: 105px;
+  padding-left: 115px;
+}
+
+.landing-form .empty-ongoing-box .empty-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 12px;
+}
+
+.landing-form .empty-ongoing-box .empty-subtitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+.landing-form .empty-ongoing-box .box-line {
+  border-top: solid 2px #bdc3c7;
+  margin-left: 55px;
+  margin-top: 28px;
+  width: 187px;
 }
 
 .landing-form .dashboard {
@@ -12353,5 +12460,310 @@ p {
   width: 300px;
   margin-right: 15px;
   margin-bottom: 15px;
+}
+
+.managers-form .main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.managers-form .main-holder {
+  background-color: #dcdde1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.managers-form .table-wrapper {
+  width: 80%;
+  padding: 10px 8px;
+  padding-top: 152px;
+}
+
+.managers-form .table-wrapper .table {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #ecf0f1;
+}
+
+.managers-form .custom-navbar {
+  padding-left: 40px;
+  padding-right: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.managers-form .custom-navbar .nav-title {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.managers-form .custom-navbar .nav-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: gray;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper {
+  border-right: solid 1px gray;
+  padding: 0 15px 0 15px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu {
+  right: 0;
+  left: auto;
+  margin-top: 10px;
+  width: 100%;
+  min-width: 350px;
+  height: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  overflow: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .no-notification {
+  display: none !important;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-box-icon {
+  opacity: 0.3;
+  margin-bottom: 10px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-line {
+  border-top: solid 2px #876ab1;
+  width: 100%;
+  margin: 5px 0;
+  max-width: 100px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-details {
+  line-height: 25px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder .notif-subtitle {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes {
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notification-text-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px !important;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 15px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-check {
+  width: 100%;
+  max-width: 70px;
+  background-color: #876ab1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-check .fa {
+  color: white;
+  font-size: 25px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-times {
+  width: 100%;
+  max-width: 70px;
+  background-color: #7d7d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-icon-times .fa {
+  color: white;
+  font-size: 25px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card {
+  width: 100%;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group {
+  line-height: 15px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group .notif-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-info-group .notif-department {
+  font-size: 14px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-user {
+  padding: 10px;
+  padding-bottom: 5px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver {
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  line-height: 15px !important;
+  background-color: gainsboro;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver .info-top {
+  display: flex;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .notification-menu .notification-holder-yes .notif-display-area .notif-card .card-approver .notif-approver {
+  margin-left: 5px !important;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .btn-notification {
+  border: none;
+  background-color: transparent;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .btn-notification .nav-icon {
+  color: gray;
+  font-size: 20px;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .btn-notification:focus {
+  outline: none;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper .btn-notification:focus .nav-icon {
+  color: cornflowerblue;
+}
+
+.managers-form .custom-navbar .nav-options .nav-option-wrapper:last-child {
+  border-right: solid 1px transparent;
+}
+
+.managers-form .dashboard {
+  padding-top: 60px;
+  height: 100vh;
+  width: 100%;
+  max-width: 240px;
+  background-color: #876ab1;
+}
+
+.managers-form .dashboard .dashboard-wrapper .user-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.managers-form .dashboard .dashboard-wrapper .user-wrapper .user-icon {
+  width: 100%;
+  height: 100%;
+  max-width: 120px;
+  border-radius: 100%;
+}
+
+.managers-form .dashboard .dashboard-wrapper .user-wrapper .user-details {
+  margin-top: 10px;
+  line-height: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+.managers-form .dashboard .dashboard-wrapper .user-wrapper .user-details .user-name {
+  font-weight: 600;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper {
+  margin-top: 30px;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper .list-container {
+  padding: 13px 30px 13px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper .list-container .list-icon {
+  margin-right: 10px;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper .list-container .list-choice {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper .list-container:hover {
+  text-decoration: none;
+  background-color: #7c718e;
+  border-left: solid 5px #544d4d;
+  padding-left: 25px;
+}
+
+.managers-form .dashboard .dashboard-wrapper .list-wrapper .active-list {
+  background-color: #b7a7d0;
+  border-left: solid 5px white;
+  padding-left: 25px;
 }
 
