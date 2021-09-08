@@ -28,6 +28,45 @@
         }
     }
 
+    .table-approval, .application-type {
+        width: 100%;
+        margin-top: 10px;
+
+        .td-main {
+            border: solid 1px ;
+            width: 25%;
+            font-size: 15px;
+            padding-left: 5px;
+            background-color: #a5b1c2;
+        }
+
+        .td-right {
+            background-color: white;
+
+        }     
+    }
+
+    
+
+    .emp-table {
+        .td-emp {
+            border: solid 1px ;
+            width: 25%;
+            font-size: 15px;
+            padding-left: 5px;
+            background-color: #a5b1c2;
+        }
+
+        .td-name {
+            width: 75%;
+            border: solid 1px;
+            padding-left: 5px;
+            font-size: 15px;
+        }
+    }
+
+
+
     .custom-navbar {
         padding-left: 40px;
         padding-right: 40px;

@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="parent-holder">
-                {{-- <div class="new-box">
+                <div class="new-box">
                   <a href="#" class="box-title">
                     <span>New</span>
                     <span class="badge">4</span>
@@ -191,9 +191,9 @@
                       
                     </div>
                     
-                </div> --}}
+                </div>
 
-                <div class="empty-new-box">
+                {{-- <div class="empty-new-box">
                   <a href="#" class="empty-box-title">
                     <span>New</span>
                     <span class="badge">0</span>
@@ -204,9 +204,9 @@
                     <p class="empty-title">This field is empty</p>
                     <p class="empty-subtitle">You don't have any new requests.</p>
                   </div>
-                </div>
+                </div> --}}
 
-                {{-- <div class="ongoing-box">
+                <div class="ongoing-box">
                   <a href="#" class="box-title">
                     <span>On-going</span>
                     <span class="badge">2</span>
@@ -234,9 +234,9 @@
                         </div>
                       </div>
                     </div>
-                </div> --}}
+                </div>
 
-                <div class="empty-ongoing-box">
+                {{-- <div class="empty-ongoing-box">
                   <a href="#" class="empty-box-title">
                     <span>On-going</span>
                     <span class="badge">0</span>
@@ -247,7 +247,7 @@
                     <p class="empty-title">This field is empty</p>
                     <p class="empty-subtitle">You don't have any on-going requests.</p>
                   </div>
-                </div>
+                </div> --}}
 
                 <div class="done-box">
                   <a href="#" class="box-title">

@@ -137,7 +137,7 @@
                 <div class="table-wrapper">
                     <table id="table_id" class="table table-bordered custome-table">
                         <thead>
-                            <tr class="table-header">
+                            <tr>
                                 <th>Employee Name</th>
                                 <th> Emp ID</th>
                                 <th>Department</th>
@@ -171,20 +171,83 @@
 
                     <!---approval modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Request Form</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                              ...
+                              <table class="table-approval">
+                                <tr>
+                                  <td class="td-main">Request Date</td>
+                                  <td class="td-main td-right">06/28/2021</td>
+                                  <td class="td-main">Date Hired</td>
+                                  <td class="td-main td-right">05/16/2017</td>  
+                                </tr>
+                                <tr>
+                                  <td class="td-main">Requested By</td>
+                                  <td class="td-main td-right">Roselle Alcantara</td>
+                                  <td class="td-main">Department</td>
+                                  <td class="td-main td-right">Production Improvement</td>
+                                </tr>
+                                <tr>
+                                  <td class="td-main">Verified By</td>
+                                  <td class="td-main td-right">Menandro Dizon</td>
+                                  <td class="td-main">Process/Section</td>
+                                  <td class="td-main td-right">YP</td>
+                                </tr>
+                                <tr>
+                                  <td class="td-main">General Manager</td>
+                                  <td class="td-main td-right">Anna Gonzales</td>
+                                  <td class="td-main">Local Number</td>
+                                  <td class="td-main td-right">1058</td>
+                                </tr>
+                              </table>
+
+                              <table class="emp-table table-approval">
+                                <tr>
+                                  <td class="td-emp">Employee Name</td>
+                                  <td class="td-name">Jenny Rose Santos</td>
+                                </tr>
+                              </table>
+
+                              <table class="application-type">
+                                <tr>
+                                  <td class="td-main">Application Type</td>
+                                  <td class="td-main td-right">New User Account</td>
+                                  <td class="td-main">Process</td>
+                                  <td class="td-main td-right">YP</td>
+                                </tr>
+                                <tr>
+                                  <td class="td-main">Global ID</td>
+                                  <td class="td-main td-right"></td>
+                                  <td class="td-main">PC Name</td>
+                                  <td class="td-main td-right">PC16060165J</td>
+                                  </tr>
+                                </tr>
+                              </table>
+
+                              <table class="emp-table table-approval">
+                                <tr>
+                                  <td class="td-emp">Request Type</td>
+                                  <td class="td-name">PC, Logon, Email</td>
+                                </tr>
+                                <tr>
+                                  <td class="td-emp">Application Services</td>
+                                  <td class="td-name">Matrix</td>
+                                </tr>
+                                <tr>
+                                  <td class="td-emp">Shared Folder</td>
+                                  <td class="td-name">BE, Module</td>
+                                </tr>
+                              </table>
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Approve</button>
-                              <button type="button" class="btn btn-primary">Deny</button>
+                              <button type="button" class="btn btn-success" data-dismiss="modal">Approve</button>
+                              <button type="button" class="btn btn-danger">Deny</button>
                             </div>
                           </div>
                         </div>

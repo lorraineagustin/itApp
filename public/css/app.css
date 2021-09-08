@@ -11641,7 +11641,7 @@ p {
 }
 
 .landing-form .new-box {
-  background-color: #ffb8b8;
+  background-color: white;
   margin-right: 55px;
   margin-bottom: 15px;
   margin-left: 44px;
@@ -11779,7 +11779,7 @@ p {
 }
 
 .landing-form .ongoing-box {
-  background-color: #3dc1d3;
+  background-color: white;
   margin-right: 55px;
   margin-bottom: 15px;
   display: flex;
@@ -11915,7 +11915,7 @@ p {
 }
 
 .landing-form .done-box {
-  background-color: #c56cf0;
+  background-color: white;
   margin-right: 55px;
   margin-bottom: 15px;
   display: flex;
@@ -12488,6 +12488,41 @@ p {
 .managers-form .table-wrapper .table {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background-color: #ecf0f1;
+}
+
+.managers-form .table-approval,
+.managers-form .application-type {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.managers-form .table-approval .td-main,
+.managers-form .application-type .td-main {
+  border: solid 1px;
+  width: 25%;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: #a5b1c2;
+}
+
+.managers-form .table-approval .td-right,
+.managers-form .application-type .td-right {
+  background-color: white;
+}
+
+.managers-form .emp-table .td-emp {
+  border: solid 1px;
+  width: 25%;
+  font-size: 15px;
+  padding-left: 5px;
+  background-color: #a5b1c2;
+}
+
+.managers-form .emp-table .td-name {
+  width: 75%;
+  border: solid 1px;
+  padding-left: 5px;
+  font-size: 15px;
 }
 
 .managers-form .custom-navbar {
