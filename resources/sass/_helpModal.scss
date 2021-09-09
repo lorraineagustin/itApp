@@ -1,0 +1,125 @@
+.help-modal {
+    .help-dialog {
+        width: 100%;
+        max-width: 800px;
+        height: 550px;
+        background-color: white;
+    }
+
+    .help-content {
+        width: 100%;
+        height: 100%;
+
+
+        .progress-btn {
+            position: absolute;
+            display: flex;
+            flex-direction: row-reverse;
+            bottom: 20px;
+            right: 0;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            max-width: 250px;
+
+            .swiper-button-disabled {
+                display: none;
+            }
+
+            .swiper-button-prev {
+                margin-right: 30px;
+            }
+
+            .btn-progress {
+                background-color: #876ab1;
+                border-color: #876ab1;
+            }
+
+            .swiper-button-next, .swiper-button-prev {
+                width: 100%!important;
+                max-width: 110px!important;
+                height: auto !important;
+                color: white !important;
+            
+                &:after {
+                    content: none!important;
+                }
+            }
+        }
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                .help-division {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .display-part {
+                        height: 55%;
+                        padding: 30px;
+                        position: relative;
+
+                        .display-background {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url("/itapp/resources/assets/technology.png");
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: -1;
+                            background-color: darkblue;
+                            background-repeat: no-repeat;
+                            background-position: bottom left;
+                            background-size: 850px;
+                            opacity: 0.2;
+                        }
+
+                        .modal-svg {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .details-part {
+                        height: 45%;
+                        padding: 50px 30px;
+
+                        .details-heading {
+                            color: #56575a;
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+
+                        .details-text {
+                            color: #56575a;
+                            font-size: 18px;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .swiper-paginations {
+        position: absolute;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0,0,0);
+        z-index: 10;
+        bottom: 39%!important;
+
+        .swiper-pagination-bullet {
+            color: transparent;
+            width: 10px;
+            height: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background-color: #876ab1;
+        }
+    }
+}

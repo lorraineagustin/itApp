@@ -133,6 +133,10 @@
                                 <i class="fa fa-history list-icon" aria-hidden="true"></i>
                                 <p class="list-choice">History</p>
                             </a>
+                            <a class="list-container" data-toggle="modal" data-target="#helpModal">
+                                <i class="fa fa-question-circle list-icon" aria-hidden="true"></i>
+                                <p class="list-choice">Help</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -146,10 +150,13 @@
                                   
                                       <div class="swiper-slide">
                                           <div class="swiper-content-holder">
-                                            <p class="form-heading">Employee's Details</p>
+                                            <div class="heading-wrapper">
+                                              <p class="form-heading">Employee's Details</p>
+                                              <i class="fa fa-user-circle" aria-hidden="true"></i>
+                                            </div>
                                             <div class="swiper-form-part">
                                               <div class="form-group">
-                                                <p class="label-form">Full Name</p>
+                                                <p class="label-form">Applicant's Name</p>
                                                 <div class="form-flex-group">
                                                   <input type="text" class="form-control textbox-form" id="" placeholder="First Name">
                                                   <input type="text" class="form-control textbox-form" id="" placeholder="Last Name">
@@ -185,7 +192,10 @@
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="swiper-content-holder">
-                                          <p class="form-heading">Account Details</p>
+                                          <div class="heading-wrapper">
+                                            <p class="form-heading">Account Details</p>
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                                          </div>
                                           <div class="swiper-form-part">
                                             <div class="form-group">
                                               <p class="label-form">Application Type</p>
@@ -227,31 +237,34 @@
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="swiper-content-holder">
-                                          <p class="form-heading">Service Details</p>
+                                          <div class="heading-wrapper">
+                                            <p class="form-heading">Service Details</p>
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                                          </div>
                                           <div class="swiper-form-part">
                                             <div class="form-group">
                                               <p class="label-form">Request Type</p>
                                               <div class="form-flex-group radio-group-flex">
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="radio" name="serviceRequestRadio" id="requestPc" value="requestPc">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="serviceRequestRadio" id="requestPc" value="requestPc">
                                                   <label class="radio-image" for="requestPc">
                                                     <i class="fa fa-laptop" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">PC Request</p>
+                                                    <p class="radio-label-text">PC</p>
                                                   </label>
                                                   
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="radio" name="serviceRequestRadio" id="requestLogon" value="requestLogon">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="serviceRequestRadio" id="requestLogon" value="requestLogon">
                                                   <label class="radio-image" for="requestLogon">
                                                     <i class="fa fa-windows" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Logon Request</p>
+                                                    <p class="radio-label-text">Logon</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="radio" name="serviceRequestRadio" id="requestEmail" value="requestEmail">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="serviceRequestRadio" id="requestEmail" value="requestEmail">
                                                   <label class="radio-image" for="requestEmail">
                                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Email Request</p>
+                                                    <p class="radio-label-text">Email</p>
                                                   </label>
                                                 </div>
                                               </div>
@@ -294,7 +307,14 @@
                                                   <input class="form-check-input radio-custom" type="checkbox" name="serviceAppRadio" id="appNetUpgrade" value="appNetUpgrade">
                                                   <label class="radio-image" for="appNetUpgrade">
                                                     <i class="fa fa-globe" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">Internet</p>
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="serviceAppRadio" id="appOthers" value="appOthers">
+                                                  <label class="radio-image" for="appOthers">
+                                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                                    <p class="radio-label-text">Others</p>
                                                   </label>
                                                 </div>
                                               </div>
@@ -305,81 +325,97 @@
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="swiper-content-holder">
-                                          <p class="form-heading">Additional Request</p>
+                                          <div class="heading-wrapper">
+                                            <p class="form-heading">Additional Request</p>
+                                            <i class="fa fa-id-card" aria-hidden="true"></i>
+                                          </div>
                                           <div class="swiper-form-part">
                                             <div class="form-group">
                                               <p class="label-form">Shared Folder</p>
                                               <div class="form-flex-group radio-group-flex radio-group-flex-custom">
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appERP" value="appERP">
-                                                  <label class="radio-image" for="appERP">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfBE" value="sfBE">
+                                                  <label class="radio-image" for="sfBE">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">ERP</p>
+                                                    <p class="radio-label-text">BE</p>
                                                   </label>
                                                   
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appSSLVPN" value="appSSLVPN">
-                                                  <label class="radio-image" for="appSSLVPN">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfCommon" value="sfCommon">
+                                                  <label class="radio-image" for="sfCommon">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">SSL-VPN</p>
+                                                    <p class="radio-label-text">Common</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appIMES" value="appIMES">
-                                                  <label class="radio-image" for="appIMES">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfEng" value="sfEng">
+                                                  <label class="radio-image" for="sfEng">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">IMES</p>
+                                                    <p class="radio-label-text">Engineering</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appPDM" value="appPDM">
-                                                  <label class="radio-image" for="appPDM">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfGS" value="sfGS">
+                                                  <label class="radio-image" for="sfGS">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">PDM</p>
-                                                  </label>
-                                                  
-                                                </div>
-                                                <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
-                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">GS</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfHR" value="sfHR">
+                                                  <label class="radio-image" for="sfHR">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">HR</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfFinance" value="sfFinance">
+                                                  <label class="radio-image" for="sfFinance">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">Finance</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfMDL" value="sfMDL">
+                                                  <label class="radio-image" for="sfMDL">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">Module</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfPED" value="sfPED">
+                                                  <label class="radio-image" for="sfPED">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">PED</p>
                                                   </label>
                                                 </div>
                                                 <div class="form-check">
-                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="appNetUpgrade" value="appNetUpgrade">
-                                                  <label class="radio-image" for="appNetUpgrade">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfPPIC" value="sfPPIC">
+                                                  <label class="radio-image" for="sfPPIC">
                                                     <i class="fa fa-folder-open" aria-hidden="true"></i>
-                                                    <p class="radio-label-text">Internet Upgrade</p>
+                                                    <p class="radio-label-text">PPIC</p>
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfProcurement" value="sfProcurement">
+                                                  <label class="radio-image" for="sfProcurement">
+                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                                    <p class="radio-label-text">Procurement</p>
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfQA" value="sfQA">
+                                                  <label class="radio-image" for="sfQA">
+                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                                    <p class="radio-label-text">QA</p>
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input radio-custom" type="checkbox" name="sharedFolderRadio" id="sfTraining" value="sfTraining">
+                                                  <label class="radio-image" for="sfTraining">
+                                                    <i class="fa fa-folder-open" aria-hidden="true"></i>
+                                                    <p class="radio-label-text">Training</p>
                                                   </label>
                                                 </div>
                                               </div>
@@ -390,7 +426,77 @@
                                       </div>
                                       <div class="swiper-slide">
                                         <div class="swiper-content-holder">
-                                          <p class="form-heading">Details Confirmation</p>
+                                          <div class="heading-wrapper">
+                                            <p class="form-heading">Details Confirmation</p>
+                                            <i class="fa fa-check-square" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="final-form-confirmation">
+                                            <table class="confirmation-table-up">
+                                              <tr>
+                                                <td class="td-upper td-bg">Requested Date</td>
+                                                <td class="td-upper">08/31/2021</td>
+                                                <td class="td-upper td-bg">Date Hired</td>
+                                                <td class="td-upper">10/24/2022</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="td-upper td-bg">Requested By</td>
+                                                <td class="td-upper">ClarizaMae Malig</td>
+                                                <td class="td-upper td-bg">Department</td>
+                                                <td class="td-upper">Quality Assurance</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="td-upper td-bg">Verified By</td>
+                                                <td class="td-upper">Michelle Marzan</td>
+                                                <td class="td-upper td-bg">Process/Section</td>
+                                                <td class="td-upper">Supplier Quality Control</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="td-upper td-bg">General Manager</td>
+                                                <td class="td-upper">Kerwin Sotto</td>
+                                                <td class="td-upper td-bg">Local Number</td>
+                                                <td class="td-upper">1081</td>
+                                              </tr>
+                                            </table>
+
+                                            <table class="confirmation-table-bot table-username">
+                                              <tr>
+                                                <td class="td-bg td-label" colspan="2">Employee Name</td>
+                                                <td class="td-name" colspan="2"> Alfa Joy Zamora</td>
+                                              </tr>                                            
+                                            </table>
+
+                                            <table class="confirmation-table-bot">
+                                              <tr>
+                                                <td class="td-upper td-bg">Application Type</td>
+                                                <td class="td-upper">New User</td>
+                                                <td class="td-upper td-bg">Process</td>
+                                                <td class="td-upper">SQA</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="td-upper td-bg">Global ID</td>
+                                                <td class="td-upper">21G500035</td>
+                                                <td class="td-upper td-bg">PC Name</td>
+                                                <td class="td-upper">PC17090197J</td>
+                                              </tr> 
+                                            </table>
+
+                                            <table class="confirmation-table-bot table-username">
+                                              <tr>
+                                                <td class="td-bg td-label" colspan="2">Request Type</td>
+                                                <td class="td-name" colspan="2">PC, Logon, Email</td>
+                                              </tr>   
+                                              <tr>
+                                                <td class="td-bg td-label" colspan="2">Application Services</td>
+                                                <td class="td-name" colspan="2">IMES, SSL-VPN, ERP, PDM</td>
+                                              </tr> 
+                                              <tr>
+                                                <td class="td-bg td-label" colspan="2">Shared Folder*</td>
+                                                <td class="td-name" colspan="2">BE, Common</td>
+                                              </tr>                                          
+                                            </table>
+                                          </div>
+
+                                          <button type="button" class="btn btn-submit">Submit</button>
                                         </div>
                                       </div>
                                   

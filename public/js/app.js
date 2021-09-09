@@ -37382,6 +37382,15 @@ var swiper = new Swiper(".mySwiper", {
   },
   allowTouchMove: false
 });
+var swiper = new Swiper(".helpSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    el: ".swiper-paginations"
+  }
+});
 
 /***/ }),
 
